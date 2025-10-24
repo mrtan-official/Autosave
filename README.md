@@ -11,7 +11,7 @@ AutoSaver is a lightweight and smart auto-save tool designed for **Windows PC**.
 * ⏰ Periodic save interval (default: every 60 seconds).
 * 🌐 Internet check to ensure connectivity.
 * 🔐 License verification via secure server.
-* 🤖 Telegram bot integration to send user key automatically to admin.
+* 🤖 Telegram bot integration to send user key automatically to developer.
 * 💻 Works only on **Windows PC** (not Android).
 * 🚫 No additional installation or dependencies required.
 
@@ -20,7 +20,7 @@ AutoSaver is a lightweight and smart auto-save tool designed for **Windows PC**.
 ## 🚀 How It Works
 
 1. The tool verifies your license using your system username and MAC address.
-2. If the license is valid, it sends your unique key to the developer’s Mr Tan
+2. If the license is valid, it sends your unique key to the developer Mr Tan
 3. It checks your internet connection.
 4. Every 60 seconds, it triggers `Ctrl + S` and `Enter` to auto-save your active document or project.
 
