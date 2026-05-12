@@ -3,18 +3,19 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Version-5.0_Ultra-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/Platform-Windows-success?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Status-Active-green?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Build-Stable-brightgreen?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
 </p>
 
 ---
 
-## 📌 About
+# 📌 Overview
 
-**AutoSaver Pro** is a powerful Windows automation tool that automatically saves your work in applications that do not include built-in auto-save functionality.
+**AutoSaver Pro** is a smart and lightweight Windows automation tool designed to automatically save your work in applications that do not provide built-in auto-save functionality.
 
-The software continuously monitors your system and automatically performs the `Ctrl + S` shortcut at your selected interval to protect your work from accidental loss.
+The application continuously monitors your active Windows session and automatically performs the `Ctrl + S` keyboard shortcut at a selected time interval. This helps prevent accidental data loss caused by crashes, power outages, software freezes, or forgetting to save manually.
 
-Perfect for:
+AutoSaver Pro is built for users who frequently work in applications like:
 
 - Notepad
 - WordPad
@@ -22,91 +23,233 @@ Perfect for:
 - VS Code
 - Sublime Text
 - Photoshop
-- Other Windows applications
+- File editors
+- Development environments
+- Design software
+- Other Windows applications supporting `Ctrl + S`
+
+The tool features:
+
+- 🔐 Secure device-based license verification
+- 🤖 Telegram registration integration
+- 🌐 Internet monitoring system
+- 📊 Modern Rich Console dashboard
+- ⚡ Standalone `.exe` support
+- 💻 Zero external dependency installation
 
 ---
 
-# ✨ Features
+# ✨ Main Features
 
-✅ Automatic periodic saving  
-✅ Modern Rich Console dashboard  
-✅ Telegram key registration system  
-✅ Internet connectivity monitoring  
-✅ Secure device-based license verification  
-✅ Standalone `.exe` support  
-✅ Lightweight and fast  
+## 🧠 Automatic Saving
+
+AutoSaver Pro automatically saves your active work periodically by simulating:
+
+```bash
+Ctrl + S
+```
+
+This ensures your progress is continuously protected.
+
+---
+
+## 📊 Modern Live Dashboard
+
+The software includes a beautiful real-time monitoring dashboard powered by the Rich Console framework.
+
+Dashboard includes:
+
+- Operator information
+- Windows version
+- Internet connection status
+- Total save count
+- Engine status
+- Live clock
+- Save countdown progress
+
+---
+
+## 🔐 Secure License Verification
+
+Every machine generates a unique hardware-based key using:
+
+- Windows username
+- MAC address
+
+This helps secure activation and prevents unauthorized use.
+
+---
+
+## 🤖 Telegram Key Registration
+
+Once activated, the software automatically sends registration information to the developer Telegram bot.
+
+Information includes:
+
+- Operator name
+- Device key
+- Windows version
+- Registration time
+- Activation status
+
+---
+
+## 🌐 Internet Connectivity Monitoring
+
+AutoSaver continuously checks internet connectivity.
+
+If the internet disconnects:
+
+- The engine pauses safely
+- Monitoring resumes automatically after reconnection
+
+---
+
+## ⚡ Lightweight & Fast
+
+- Minimal CPU usage
+- Low memory consumption
+- Runs smoothly in background
+- Designed for long-term usage
+
+---
+
+## 📦 Standalone Executable
+
+AutoSaver Pro is distributed as a standalone Windows executable.
+
 ✅ No Python installation required  
+✅ No pip modules required  
+✅ No configuration setup required  
+
+Simply download and run.
 
 ---
 
 # 🖥️ Platform Support
 
-| Operating System | Supported |
+| Operating System | Support |
 |---|---|
 | Windows 10 | ✅ |
 | Windows 11 | ✅ |
+| Windows 8 | ✅ |
 | Linux | ❌ |
+| macOS | ❌ |
 | Android | ❌ |
 
 ---
 
-# ⚙️ How It Works
+# 🚀 How AutoSaver Works
 
-1. Launch the application
-2. Enter your operator name
-3. Set save interval
-4. AutoSaver starts monitoring
-5. The tool automatically triggers:
-   ```bash
-   Ctrl + S
-   ```
-6. Your work gets saved automatically
+## Step 1 — Launch Application
+
+Run:
+
+```bash
+AutoSaver_Pro.exe
+```
 
 ---
 
-# 🔐 License System
+## Step 2 — Operator Registration
 
-Each device generates a unique key using:
+The software asks for your operator name:
 
-- Windows username
+```bash
+REGISTER OPERATOR NAME >>
+```
+
+This name is stored locally for future launches.
+
+---
+
+## Step 3 — Device Verification
+
+AutoSaver generates a unique device key based on:
+
+- System username
 - MAC address
 
 Example:
 
 ```bash
-username-00:1A:2B:3C:4D:5E
+MrTan-00:1A:2B:3C:4D:5E
 ```
 
-This ensures secure activation and prevents unauthorized usage.
+The key is securely verified.
 
 ---
 
-# 🤖 Telegram Integration
+## Step 4 — Telegram Registration
 
-After verification, AutoSaver automatically sends:
-
-- User name
-- Device key
-- Windows version
-- Registration time
-
-to the developer via Telegram bot.
+After verification, AutoSaver automatically sends the registration information to the developer bot.
 
 ---
 
-# 🌐 Internet Requirement
+## Step 5 — Save Interval Selection
 
-Internet connection is required for:
+Choose your preferred save interval:
 
-- License verification
-- Telegram registration
-- Connectivity monitoring
+```bash
+SET SAVE INTERVAL (SECONDS) >>
+```
 
-After successful validation, the tool continues running normally.
+Minimum supported interval:
+
+```bash
+3 seconds
+```
+
+Recommended interval:
+
+```bash
+60 seconds
+```
 
 ---
 
-# 📊 Console Preview
+## Step 6 — Auto Monitoring Starts
+
+The engine enters live monitoring mode.
+
+Every selected interval:
+
+- AutoSaver performs:
+  ```bash
+  Ctrl + S
+  ```
+- Your active work gets saved automatically
+
+---
+
+# 📊 Dashboard Components
+
+| Component | Description |
+|---|---|
+| OPERATOR | Registered operator name |
+| PLATFORM | Windows version |
+| NETWORK | Internet status |
+| SAVES | Total successful save cycles |
+| ENGINE | Current engine state |
+| CLOCK | Real-time system clock |
+| PROGRESS | Remaining time before next save |
+
+---
+
+# 🧩 Engine Status Types
+
+| Status | Meaning |
+|---|---|
+| READY | Engine initialized |
+| MONITORING | Normal monitoring active |
+| EXECUTING | Save operation running |
+| SUCCESS | Save completed successfully |
+| FAIL_RETRY | Save retry mode |
+| NET_ERROR | Internet disconnected |
+
+---
+
+# 📊 Example Console Output
 
 ```bash
  █████╗ ██╗   ██╗████████╗ ██████╗ ███████╗ █████╗ ██╗   ██╗███████╗██████╗ 
@@ -119,48 +262,11 @@ After successful validation, the tool continues running normally.
 [+] OPERATOR : Mr Tan
 [+] PLATFORM : Windows 11
 [+] NETWORK  : CONNECTED
-[+] SAVES    : 15 cycles
+[+] SAVES    : 42 cycles
 [+] ENGINE   : MONITORING
 
-Next Save: ████████████░░░░░░ 12s
+Next Save: ███████████████░░░ 08s
 ```
-
----
-
-# 📦 Installation
-
-## Download
-
-Download the latest release from:
-
-👉 Releases Section
-
----
-
-## Run
-
-Execute:
-
-```bash
-AutoSaver_Pro.exe
-```
-
----
-
-# ⚠️ Important Notes
-
-- Works only on Windows PC
-- Administrator permission recommended
-- Do not modify internal files
-- Requires applications that support `Ctrl + S`
-
----
-
-# 🛡️ Security Notice
-
-AutoSaver uses hardware-based identification for secure license verification.
-
-Unauthorized modification or redistribution is prohibited.
 
 ---
 
@@ -172,25 +278,104 @@ AutoSaver/
 ├── README.md
 ├── autosave.py
 ├── requirements.txt
+├── LICENSE
 └── releases/
 ```
 
 ---
 
+# 📦 Release Files
+
+Latest releases include:
+
+```bash
+AutoSaver_Pro.exe
+```
+
+or compressed package:
+
+```bash
+AutoSaver_Pro_v5.zip
+```
+
+---
+
+# ⚠️ Important Notes
+
+- Works only on Windows PC
+- Requires applications supporting `Ctrl + S`
+- Administrator permission recommended
+- Internet required for first verification
+- Do not modify internal files
+- Unauthorized editing may break activation
+
+---
+
+# 🛡️ Security Notice
+
+AutoSaver Pro uses hardware-based identification and secure verification methods to prevent unauthorized use.
+
+Tampering, reverse engineering, or redistribution without permission is prohibited.
+
+---
+
+# 🔧 Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Core engine |
+| Rich Console | Live dashboard UI |
+| PyAutoGUI | Keyboard automation |
+| Telegram Bot API | Registration system |
+| JSON | Local configuration |
+
+---
+
 # 🧑‍💻 Developer
 
-**Mr Tan**
+## Mr Tan
+
+Developer & Maintainer of AutoSaver Pro
+
+---
+
+# 🔗 Official Repository
+
+GitHub Repository:
+
+https://github.com/mrtan-official/server
+
+---
+
+# 📘 Repository Description
+
+> A standalone Windows AutoSaver tool that automatically saves progress in applications without built-in auto-save support. Features include secure license verification, Telegram key registration, live monitoring dashboard, internet status checking, and automatic periodic saving.
 
 ---
 
 # 📜 License
 
-This project is distributed for educational and personal use only.
+This project is distributed for:
 
-Unauthorized redistribution or modification without permission is prohibited.
+- Educational use
+- Personal use
+
+Commercial redistribution, modification, reverse engineering, or resale without permission is strictly prohibited.
 
 ---
 
-# ⭐ Repository Description
+# ⭐ Support
 
-> Automatic save tool for Windows applications without built-in auto-save support.
+If you like this project:
+
+- ⭐ Star the repository
+- 🍴 Fork the project
+- 🛠️ Report issues
+- 🚀 Share with others
+
+---
+
+# ❤️ Thank You
+
+Thank you for using AutoSaver Pro.
+Your work deserves automatic protection.
