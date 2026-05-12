@@ -1,97 +1,237 @@
 # AutoSaver Tool
 
-**Description:**
-AutoSaver is a lightweight and smart auto-save tool designed for **Windows PC**. It automatically saves your active work in applications that **don’t have a built-in auto-save feature**, such as Notepad, WordPad, Paint, and similar programs. The tool simulates the `Ctrl + S` shortcut periodically to ensure your work is never lost. It includes built-in license validation and user key registration. This version is fully self-contained and runs as an **.exe file**, meaning **no external Python modules or dependencies are required**.
+## 📌 Description
+
+**AutoSaver** is a smart and lightweight automation tool designed specifically for **Windows PC** users. It automatically saves your active work in applications that do not support built-in auto-save, such as Notepad, WordPad, Paint, and similar desktop software.
+
+The tool works by simulating the `Ctrl + S` keyboard shortcut at a fixed interval, helping prevent accidental data loss during work sessions.
+
+This version includes:
+
+- 🔐 Secure license verification
+- 🤖 Telegram key registration system
+- 🌐 Internet connectivity monitoring
+- 💻 Fully standalone `.exe` support
+- ⚡ No Python installation or external dependencies required
 
 ---
 
-## ⚙️ Features
+# ⚙️ Features
 
-* 🧠 Automatically saves work in applications without default auto-save.
-* ⏰ Periodic save interval (default: every 60 seconds).
-* 🌐 Internet check to ensure connectivity.
-* 🔐 License verification via secure server.
-* 🤖 Telegram bot integration to send user key automatically to developer.
-* 💻 Works only on **Windows PC** (not Android).
-* 🚫 No additional installation or dependencies required.
-
----
-
-## 🚀 How It Works
-
-1. The tool verifies your license using your system username and MAC address.
-2. If the license is valid, it sends your unique key to the developer Mr Tan
-3. It checks your internet connection.
-4. Every 60 seconds, it triggers `Ctrl + S` and `Enter` to auto-save your active document or project.
+- 🧠 Automatically saves active work periodically
+- ⏰ Custom save interval support
+- 🌐 Internet connectivity checking
+- 🔐 Secure device-based license validation
+- 🤖 Telegram bot integration for automatic key submission
+- 💻 Designed only for Windows PC
+- 📦 Portable `.exe` version — no setup required
+- 🎨 Modern Rich Console UI Dashboard
+- 📊 Live monitoring and save statistics
 
 ---
 
-## 🖥️ Usage
+# 🚀 How It Works
 
-1. Download and run the `AutoSave.exe` file.
-2. When prompted, enter your name.
-3. The tool will automatically verify your license and send the key to the admin bot.
-4. Once verified, AutoSaver will continuously monitor your system and auto-save your work.
+1. The tool generates a unique device key using:
+   - System username
+   - MAC address
 
-> ⚠️ Do not modify the `.exe` or any internal system files; doing so may break license verification.
+2. The license system validates the device.
+
+3. Once verified:
+   - The user key is automatically sent to the developer via Telegram bot.
+   - AutoSaver starts monitoring your system.
+
+4. Based on the selected interval:
+   - The tool automatically triggers `Ctrl + S`
+   - Saves your active document or project continuously
 
 ---
 
-## 🧩 Configuration
+# 🖥️ Supported Applications
 
-The save interval is set to **60 seconds by default**. If you need a different version with a customized interval, contact the developer.
+AutoSaver works best with applications that support the standard `Ctrl + S` save shortcut, including:
+
+- Notepad
+- WordPad
+- Paint
+- VS Code
+- Sublime Text
+- Photoshop
+- Many other Windows desktop applications
 
 ---
 
-## 🧾 Example Console Output
+# 📦 Usage
 
+## Step 1 — Run the Application
+
+Open the compiled executable:
+
+```bash
+AutoSave.exe
 ```
-   ___       __         ____
-  / _ |__ __/ /____    / __/__ __  _____ ____
- / __ / // / __/ _ \  _\ \/ _ `/ |/ / -_) __/
-/_/ |_\_,_/\__/\___/ /___/\_,_/|___/\__/_/
 
-Alert: Don't change anything, Otherwise it won't work properly.
-Created by Tanim-BPY0241
-┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│                                       AutoSaver running... Every 60 seconds.                                        │
-└─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
-Next save in 01 seconds...
-1. Autosave successful!
-Next save in 59 seconds...
-2. Autosave successful!
+---
+
+## Step 2 — Register Operator Name
+
+When prompted, enter your name:
+
+```bash
+REGISTER OPERATOR NAME >>
 ```
 
 ---
 
-## 🧱 Notes
+## Step 3 — Set Save Interval
 
-* Works **only on Windows PC**.
-* **No Python installation required.**
-* Requires an active internet connection for the first license validation.
-* Once authorized, AutoSaver will operate silently and efficiently in the background.
+Choose how often AutoSaver should save your work:
 
----
+```bash
+SET SAVE INTERVAL (SECONDS) >>
+```
 
-## 🔐 Security Notice
+Minimum allowed interval:
 
-Each device key is generated based on your system username and MAC address. This ensures that every machine has a unique identity and prevents unauthorized use.
-
----
-
-## 🧑‍💻 Credits
-
-**Created by:** Mr Tan
-**License Verification Source:** [GitHub Repository](https://github.com/mrtan-official/server)
+```bash
+3 seconds
+```
 
 ---
 
-## 📘 Repository Description (for GitHub)
+## Step 4 — Start Monitoring
 
-> A standalone Windows AutoSaver tool (.exe) that automatically saves progress in non-auto-saving applications. Includes license verification, Telegram key registration, and internet connectivity monitoring. Ideal for apps like Notepad or Paint where manual saving is required.
+Once started, AutoSaver will:
+
+- Monitor internet connectivity
+- Run in live dashboard mode
+- Automatically save your work continuously
 
 ---
 
-## 🪪 License
+# 🧠 Dashboard Information
 
-This project is distributed for educational and personal use only. Redistribution or modification without permission is strictly prohibited.
+The live dashboard displays:
+
+| Section | Description |
+|---|---|
+| OPERATOR | Registered user name |
+| PLATFORM | Current Windows version |
+| NETWORK | Internet connection status |
+| SAVES | Total successful save cycles |
+| ENGINE | Current AutoSaver status |
+| CLOCK | Real-time system clock |
+
+---
+
+# 🔐 License System
+
+Each machine receives a unique key generated using:
+
+- Windows username
+- MAC address
+
+Example:
+
+```bash
+username-00:1A:2B:3C:4D:5E
+```
+
+This helps prevent unauthorized usage and ensures secure activation.
+
+---
+
+# 🤖 Telegram Integration
+
+After successful verification, AutoSaver automatically sends:
+
+- User name
+- Generated key
+- Operating system
+- Registration time
+
+to the developer Telegram bot.
+
+---
+
+# 🌐 Internet Requirement
+
+AutoSaver requires internet access for:
+
+- License validation
+- Telegram registration
+- Connectivity monitoring
+
+After validation, the tool continues running normally.
+
+---
+
+# 📊 Example Console Output
+
+```bash
+ █████╗ ██╗   ██╗████████╗ ██████╗ ███████╗ █████╗ ██╗   ██╗███████╗██████╗ 
+██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗██╔════╝██╔══██╗██║   ██║██╔════╝██╔══██╗
+███████║██║   ██║   ██║   ██║   ██║███████╗███████║██║   ██║█████╗  ██████╔╝
+██╔══██║██║   ██║   ██║   ██║   ██║╚════██║██╔══██║╚██╗ ██╔╝██╔══╝  ██╔══██╗
+██║  ██║╚██████╔╝   ██║   ╚██████╔╝███████║██║  ██║ ╚████╔╝ ███████╗██║  ██║
+╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝ ╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝
+
+[+] OPERATOR : Mr Tan
+[+] PLATFORM : Windows 11
+[+] NETWORK  : CONNECTED
+[+] SAVES    : 15 cycles
+[+] ENGINE   : MONITORING
+
+Next Save: ████████████░░░░░░ 12s
+```
+
+---
+
+# ⚠️ Important Notes
+
+- Works only on Windows PC
+- Android is NOT supported
+- Do not modify internal files
+- Requires keyboard shortcut support (`Ctrl + S`)
+- Recommended to keep internet enabled
+
+---
+
+# 🛡️ Security Notice
+
+This software uses a unique hardware-based identification system for secure verification and anti-abuse protection.
+
+Unauthorized modification, redistribution, or tampering may result in license failure.
+
+---
+
+# 🧑‍💻 Credits
+
+**Developer:** Mr Tan  
+**Version:** 5.0 Ultra  
+**Technology:** Python + Rich Console + Telegram Bot API
+
+---
+
+# 🔗 License Verification Source
+
+GitHub Repository:
+https://github.com/mrtan-official/server
+
+---
+
+# 📘 GitHub Repository Description
+
+> A powerful standalone Windows AutoSaver tool that automatically saves progress in applications without built-in auto-save support. Features include live monitoring dashboard, Telegram key registration, internet status checking, and secure license verification.
+
+---
+
+# 🪪 License
+
+This project is distributed for:
+
+- Educational purposes
+- Personal use only
+
+Unauthorized redistribution, resale, or modification is prohibited without developer permission.
