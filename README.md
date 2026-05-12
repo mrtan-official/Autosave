@@ -1,11 +1,9 @@
 # 🚀 AutoSaver Pro
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Version-5.0_Ultra-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Platform-Windows-success?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Build-Stable-brightgreen?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
-</p>
+![Version](https://img.shields.io/badge/Version-5.0_Ultra-blue?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Windows-success?style=for-the-badge)
+![Build](https://img.shields.io/badge/Build-Stable-brightgreen?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
 ---
 
